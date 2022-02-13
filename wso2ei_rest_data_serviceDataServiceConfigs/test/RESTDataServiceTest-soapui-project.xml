@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="9a12a922-4675-4227-afac-239e939b371a" activeEnvironment="Default" name="RESTDataServiceTest" resourceRoot="${projectDir}" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="TestSuite"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" id="8f7155ef-055d-4d41-841b-5fd6f0c4eb30" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:8290" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://localhost:8280</con:endpoint></con:endpoints><con:resource name="Student" path="/services/RESTDataService/student" id="df3e5fbf-75a2-48a6-b322-8d6d752428f1"><con:settings/><con:parameters/><con:method name="student_create" id="b11ca353-72af-470d-bfb8-e0ded4f2515b" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml; charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:read="http://ws.wso2.org/dataservice/samples/json_sample/ReadStudents">read:students</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:stud="http://localhost/services/RESTDataService/student">stud:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=UTF-8</con:mediaType><con:status>500</con:status><con:params/><con:element xmlns:stud="http://localhost/services/RESTDataService/student">stud:Fault</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/xml; charset=UTF-8</con:mediaType><con:status>500</con:status><con:params/><con:element>faultstring</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json'</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>202</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>202</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>202</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>202</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>202</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="createStudent" id="ace97789-7a51-4c87-9988-14adf784caa8" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-Type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://localhost:8280</con:endpoint><con:request>{
+  "_poststudent": {
+    "name" : "Will Smith",
+    "school": "Beverly Hills School",
+    "grade": 11
+  }
+}</con:request><con:originalUri>http://localhost/services/RESTDataService/student</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry/></con:parameterOrder></con:request></con:method><con:method name="student_find" id="b11ca353-72af-470d-bfb8-e0ded4f2515b" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml; charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:read="http://ws.wso2.org/dataservice/samples/json_sample/ReadStudents">read:students</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:stud="http://localhost/services/RESTDataService/student">stud:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=UTF-8</con:mediaType><con:status>500</con:status><con:params/><con:element xmlns:stud="http://localhost/services/RESTDataService/student">stud:Fault</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/xml; charset=UTF-8</con:mediaType><con:status>500</con:status><con:params/><con:element>faultstring</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json'</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>202</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>202</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="findStudents" id="ace97789-7a51-4c87-9988-14adf784caa8" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Accept" value="application/json" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:8280</con:endpoint><con:request>{
+  "_poststudent": {
+    "name" : "Will Smith",
+    "school": "Beverly Hills School",
+    "grade": 10
+  }
+}</con:request><con:originalUri>http://localhost/services/RESTDataService/student</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry/></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="993b42bc-6446-4b6d-a8cc-67e57a298b20" name="TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="1a9808b9-4bd4-401e-b8b0-373c6edf9742" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="studentsFintTest" id="8109e21f-a3e8-437c-a0ff-607805a573c1"><con:settings/><con:config service="http://localhost:8290" resourcePath="/services/RESTDataService/student" methodName="student_find" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="studentsFintTest" id="ace97789-7a51-4c87-9988-14adf784caa8" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Accept" value="application/json" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:8280</con:endpoint><con:request>{
+  "_poststudent": {
+    "name" : "Will Smith",
+    "school": "Beverly Hills School",
+    "grade": 10
+  }
+}</con:request><con:originalUri>http://localhost/services/RESTDataService/student</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="afd67546-35ab-4ea5-8b0d-5868a290c4a6" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry/></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="studentCreateTest" id="da0bb365-fba0-4766-8f4b-438fe0f48fb6"><con:settings/><con:config service="http://localhost:8290" resourcePath="/services/RESTDataService/student" methodName="student_create" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="studentCreateTest" id="ace97789-7a51-4c87-9988-14adf784caa8" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-Type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://localhost:8280</con:endpoint><con:request>{
+  "_poststudent": {
+    "name" : "Will Smith",
+    "school": "Beverly Hills School",
+    "grade": 11
+  }
+}</con:request><con:originalUri>http://localhost/services/RESTDataService/student</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="e7a234f6-28ba-4733-a4aa-db731af78933" name="Valid HTTP Status Codes"><con:configuration><codes>202</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry/></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
